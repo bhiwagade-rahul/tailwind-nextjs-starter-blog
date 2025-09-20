@@ -4,12 +4,14 @@ import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
 import Carousel from '@/components/Carousel'
+import CategoryColumn from '@/components/CategoryColumn'
 import Image from 'next/image'
 
 const MAX_DISPLAY = 5
 
 export default function Home({ posts }) {
   // Prepare carousel data - get posts with images
+  console.log('Posts data:', posts) // Debugging line to check posts data
   const carouselItems = posts
     .filter((post) => post.images && post.images.length > 0)
     .slice(0, 5) // Limit to 5 items for carousel
@@ -19,6 +21,27 @@ export default function Home({ posts }) {
       slug: post.slug,
     }))
 
+  // Categorize posts
+  const hollywoodPosts = posts.filter((post) =>
+    post.tags && post.tags.some((tag) => tag.toLowerCase().includes('hollywood'))
+  )
+
+  const worldPosts = posts.filter((post) =>
+    post.tags && post.tags.some((tag) =>
+      tag.toLowerCase().includes('canada') ||
+      tag.toLowerCase().includes('holiday') ||
+      tag.toLowerCase().includes('travel')
+    )
+  )
+
+  const exclusivePosts = posts.filter((post) =>
+    post.tags && post.tags.some((tag) =>
+      tag.toLowerCase().includes('images') ||
+      tag.toLowerCase().includes('exclusive') ||
+      tag.toLowerCase().includes('feature')
+    )
+  )
+
   return (
     <>
       {/* Carousel Section */}
@@ -27,6 +50,25 @@ export default function Home({ posts }) {
           <Carousel items={carouselItems} />
         </div>
       )}
+
+      {/* Category Columns */}
+      <div className="mb-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3">
+        <CategoryColumn
+          title="Hollywood"
+          posts={hollywoodPosts}
+          categoryColor="#DC2626" // Red
+        />
+        <CategoryColumn
+          title="World"
+          posts={worldPosts}
+          categoryColor="#2563EB" // Blue
+        />
+        <CategoryColumn
+          title="Exclusive"
+          posts={exclusivePosts}
+          categoryColor="#7C3AED" // Purple
+        />
+      </div>
 
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
@@ -53,11 +95,11 @@ export default function Home({ posts }) {
                   className="flex h-full flex-col focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                   aria-label={`Read more: "${title}"`}
                 >
-                  {/* Post Images */}
-                  {hasImage ? (
-                    images.length === 1 ? (
-                      // Single image - full width
-                      <div className="aspect-video overflow-hidden">
+                  {/* Image Section - 60% of card height */}
+                  {hasImage && (
+                    <div className="relative h-0 pb-[60%] overflow-hidden">
+                      {images.length === 1 ? (
+                        // Single image
                         <Image
                           src={images[0]}
                           alt={title}
@@ -65,10 +107,8 @@ export default function Home({ posts }) {
                           className="object-cover transition-transform group-hover:scale-105"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
-                      </div>
-                    ) : (
-                      // Multiple images - grid layout
-                      <div className="aspect-video overflow-hidden">
+                      ) : (
+                        // Multiple images - grid layout
                         <div className="grid h-full grid-cols-2 gap-1 p-1">
                           {/* First image - takes up left side */}
                           <div className="relative overflow-hidden rounded">
@@ -111,32 +151,12 @@ export default function Home({ posts }) {
                             )}
                           </div>
                         </div>
-                      </div>
-                    )
-                  ) : (
-                    <div className="aspect-video overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600">
-                      <div className="flex h-full items-center justify-center">
-                        <div className="text-center text-gray-400 dark:text-gray-500">
-                          <svg
-                            className="mx-auto h-12 w-12"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={1}
-                              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                            />
-                          </svg>
-                        </div>
-                      </div>
+                      )}
                     </div>
                   )}
 
-                  {/* Card Content */}
-                  <div className="flex flex-1 flex-col p-6">
+                  {/* Content Section - Remaining space (40% when image present, 100% when no image) */}
+                  <div className={`flex flex-col ${hasImage ? 'flex-1 p-4' : 'flex-1 p-6'}`}>
                     {/* Date */}
                     <time
                       dateTime={date}
@@ -146,7 +166,7 @@ export default function Home({ posts }) {
                     </time>
 
                     {/* Title */}
-                    <h2 className="mt-2 text-xl font-bold leading-tight text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                    <h2 className="mt-2 text-lg font-bold leading-tight text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                       {title}
                     </h2>
 
@@ -158,7 +178,7 @@ export default function Home({ posts }) {
                     </div>
 
                     {/* Summary */}
-                    <p className="mt-3 flex-1 text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
+                    <p className={`flex-1 text-sm text-gray-600 dark:text-gray-300 ${hasImage ? 'line-clamp-2' : 'line-clamp-3'}`}>
                       {summary}
                     </p>
 
