@@ -11,6 +11,7 @@ import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -98,6 +99,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
+            {/* Hero Image Section - Full Width Above Header */}
+            <div className="relative w-screen h-[100px] md:h-[130px] lg:h-[156px] overflow-hidden -ml-[50vw] left-1/2 mb-2">
+              <Image
+                src="/static/images/dsb-banner.webp"
+                alt="Desi Show Biz Banner"
+                fill
+                className="object-cover"
+                priority
+                sizes="100vw"
+              />
+            </div>
+
             <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
               <Header />
               <main className="mb-auto">{children}</main>

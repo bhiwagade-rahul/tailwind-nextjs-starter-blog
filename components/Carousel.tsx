@@ -50,7 +50,7 @@ export default function Carousel({ items }: CarouselProps) {
       >
         {items.map((item, index) => (
           <div key={index} className="w-full flex-shrink-0 relative">
-            <Image
+            <Image priority={false}
               src={item.image}
               alt={item.title}
               fill
@@ -59,11 +59,11 @@ export default function Carousel({ items }: CarouselProps) {
               onError={() => console.error('Image failed to load:', item.image)}
               onLoad={() => console.log('Image loaded successfully:', item.image)}
             />
-            {/* Overlay with title */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end z-10">
-              <div className="p-6 text-white">
+            {/* Title overlay without black background */}
+            <div className="absolute bottom-0 left-0 right-0 z-10">
+              <div className="p-6 bg-gradient-to-t from-black via-black/50 to-transparent">
                 <Link href={`/blog/${item.slug}`}>
-                  <h2 className="text-2xl md:text-3xl font-bold hover:text-primary-400 transition-colors">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white hover:text-primary-400 transition-colors drop-shadow-lg">
                     {item.title}
                   </h2>
                 </Link>
