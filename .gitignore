@@ -45,3 +45,9 @@ yarn-error.log*
 
 # Contentlayer
 .contentlayer
+
+.devcontainer/*
+.next/*
+.vscode/*
+.idea/*
+.yarn/*
