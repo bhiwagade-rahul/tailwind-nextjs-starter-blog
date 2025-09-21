@@ -11,7 +11,6 @@ const MAX_DISPLAY = 5
 
 export default function Home({ posts }) {
   // Prepare carousel data - get posts with images
-  console.log('Posts data:', posts) // Debugging line to check posts data
   const carouselItems = posts
     .filter((post) => post.images && post.images.length > 0)
     .slice(0, 5) // Limit to 5 items for carousel
