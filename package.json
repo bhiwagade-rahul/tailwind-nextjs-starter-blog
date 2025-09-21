@@ -14,11 +14,14 @@
   "dependencies": {
     "@headlessui/react": "2.2.0",
     "@next/bundle-analyzer": "15.2.4",
+    "@next/env": "^15.5.3",
+    "@swc/helpers": "^0.5.17",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/postcss": "^4.0.5",
     "@tailwindcss/typography": "^0.5.15",
     "body-scroll-lock": "^4.0.0-beta.0",
     "contentlayer2": "0.5.5",
+    "cross-spawn": "^7.0.6",
     "esbuild": "0.25.2",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.2",
@@ -43,6 +46,7 @@
     "remark-gfm": "^4.0.0",
     "remark-github-blockquote-alert": "^1.2.1",
     "remark-math": "^6.0.0",
+    "styled-jsx": "^5.1.7",
     "tailwindcss": "^4.0.5",
     "unist-util-visit": "^5.0.0"
   },
