@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Priya Ramteke",
+    "avatar": "/static/images/avatar.png",
+    "occupation": "Professor of Entertainment World",
+    "email": "address@yoursite.com",
+    "body": {
+      "raw": "\nWelcome to <strong>Desi Show Biz</strong> – your go-to destination for everything trending in the South Asian entertainment world.\n\nFrom Bollywood blockbusters and Tollywood hits to celebrity interviews, music releases, and viral moments — we cover it all. Our mission is to bring you the latest updates, behind-the-scenes scoops, and thoughtful stories from the world of Desi cinema and pop culture.\n\nWhether you're a die-hard fan of Indian films, a music lover, or just curious about the lives of your favorite Desi stars — you're in the right place.\n\n<strong>Desi Show Biz</strong> is run by passionate fans, curated for the global Desi community. We believe in celebrating talent, highlighting culture, and keeping it real — always.",
+      "code": "var Component=(()=>{var h=Object.create;var i=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var o in e)i(t,o,{get:e[o],enumerable:!0})},a=(t,e,o,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of f(e))!p.call(t,r)&&r!==o&&i(t,r,{get:()=>e[r],enumerable:!(s=m(e,r))||s.enumerable});return t};var v=(t,e,o)=>(o=t!=null?h(g(t)):{},a(e||!t||!t.__esModule?i(o,\"default\",{value:t,enumerable:!0}):o,t)),w=t=>a(i({},\"__esModule\",{value:!0}),t);var c=y((j,l)=>{l.exports=_jsx_runtime});var D={};b(D,{default:()=>d,frontmatter:()=>x});var n=v(c()),x={name:\"Priya Ramteke\",avatar:\"/static/images/avatar.png\",occupation:\"Professor of Entertainment World\",email:\"address@yoursite.com\"};function u(t){let e={p:\"p\",...t.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(e.p,{children:[\"Welcome to \",(0,n.jsx)(\"strong\",{children:\"Desi Show Biz\"}),\" \\u2013 your go-to destination for everything trending in the South Asian entertainment world.\"]}),(0,n.jsx)(e.p,{children:\"From Bollywood blockbusters and Tollywood hits to celebrity interviews, music releases, and viral moments \\u2014 we cover it all. Our mission is to bring you the latest updates, behind-the-scenes scoops, and thoughtful stories from the world of Desi cinema and pop culture.\"}),(0,n.jsx)(e.p,{children:\"Whether you're a die-hard fan of Indian films, a music lover, or just curious about the lives of your favorite Desi stars \\u2014 you're in the right place.\"}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(\"strong\",{children:\"Desi Show Biz\"}),\" is run by passionate fans, curated for the global Desi community. We believe in celebrating talent, highlighting culture, and keeping it real \\u2014 always.\"]})]})}function d(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,{...t,children:(0,n.jsx)(u,{...t})}):u(t)}return w(D);})();\n;return Component;"
+    },
+    "_id": "authors/default.mdx",
+    "_raw": {
+      "sourceFilePath": "authors/default.mdx",
+      "sourceFileName": "default.mdx",
+      "sourceFileDir": "authors",
+      "contentType": "mdx",
+      "flattenedPath": "authors/default"
+    },
+    "type": "Authors",
+    "readingTime": {
+      "text": "1 min read",
+      "minutes": 0.575,
+      "time": 34500,
+      "words": 115
+    },
+    "slug": "default",
+    "path": "authors/default",
+    "filePath": "authors/default.mdx",
+    "toc": []
+  },
+  {
+    "name": "Sparrow Hawk",
+    "avatar": "/static/images/sparrowhawk-avatar.jpg",
+    "occupation": "Wizard of Earthsea",
+    "company": "Earthsea",
+    "twitter": "https://twitter.com/sparrowhawk",
+    "linkedin": "https://www.linkedin.com/sparrowhawk",
+    "body": {
+      "raw": "\nAt birth, Ged was given the child-name Duny by his mother. He was born on the island of Gont, as a son of a bronzesmith. His mother died before he reached the age of one. As a small boy, Ged had overheard the village witch, his maternal aunt, using various words of power to call goats. Ged later used the words without an understanding of their meanings, to surprising effect.\n\nThe witch knew that using words of power effectively without understanding them required innate power, so she endeavored to teach him what little she knew. After learning more from her, he was able to call animals to him. Particularly, he was seen in the company of wild sparrowhawks so often that his \"use name\" became Sparrowhawk.\n",
+      "code": "var Component=(()=>{var m=Object.create;var o=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var g=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),k=(e,t)=>{for(var n in t)o(e,n,{get:t[n],enumerable:!0})},i=(e,t,n,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of p(t))!f.call(e,r)&&r!==n&&o(e,r,{get:()=>t[r],enumerable:!(s=l(t,r))||s.enumerable});return e};var x=(e,t,n)=>(n=e!=null?m(u(e)):{},i(t||!e||!e.__esModule?o(n,\"default\",{value:e,enumerable:!0}):n,e)),b=e=>i(o({},\"__esModule\",{value:!0}),e);var w=g((j,h)=>{h.exports=_jsx_runtime});var y={};k(y,{default:()=>d,frontmatter:()=>v});var a=x(w()),v={name:\"Sparrow Hawk\",avatar:\"/static/images/sparrowhawk-avatar.jpg\",occupation:\"Wizard of Earthsea\",company:\"Earthsea\",twitter:\"https://twitter.com/sparrowhawk\",linkedin:\"https://www.linkedin.com/sparrowhawk\"};function c(e){let t={p:\"p\",...e.components};return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(t.p,{children:\"At birth, Ged was given the child-name Duny by his mother. He was born on the island of Gont, as a son of a bronzesmith. His mother died before he reached the age of one. As a small boy, Ged had overheard the village witch, his maternal aunt, using various words of power to call goats. Ged later used the words without an understanding of their meanings, to surprising effect.\"}),(0,a.jsx)(t.p,{children:'The witch knew that using words of power effectively without understanding them required innate power, so she endeavored to teach him what little she knew. After learning more from her, he was able to call animals to him. Particularly, he was seen in the company of wild sparrowhawks so often that his \"use name\" became Sparrowhawk.'})]})}function d(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,{...e,children:(0,a.jsx)(c,{...e})}):c(e)}return b(y);})();\n;return Component;"
+    },
+    "_id": "authors/sparrowhawk.mdx",
+    "_raw": {
+      "sourceFilePath": "authors/sparrowhawk.mdx",
+      "sourceFileName": "sparrowhawk.mdx",
+      "sourceFileDir": "authors",
+      "contentType": "mdx",
+      "flattenedPath": "authors/sparrowhawk"
+    },
+    "type": "Authors",
+    "readingTime": {
+      "text": "1 min read",
+      "minutes": 0.63,
+      "time": 37800,
+      "words": 126
+    },
+    "slug": "sparrowhawk",
+    "path": "authors/sparrowhawk",
+    "filePath": "authors/sparrowhawk.mdx",
+    "toc": []
+  }
+]

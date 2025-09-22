@@ -1,0 +1,53 @@
+{
+  "title": "Sudeep Joins Star-Studded Cast of KD – The Devil | Director Prem Confirms",
+  "date": "2025-09-17T00:00:00.000Z",
+  "tags": [
+    "gossip",
+    "exclusive"
+  ],
+  "draft": false,
+  "summary": "Backed by KVN Productions, KD – The Devil is being made on a massive budget, with Arjun Janya composing the music.",
+  "images": [
+    "/static/images/article-4/image412.webp"
+  ],
+  "layout": "PostBanner",
+  "body": {
+    "raw": "\n## Backed by KVN Productions\nKD – The Devil is being made on a massive budget, with Arjun Janya composing the music. The film is not only set to push the boundaries of Kannada cinema but is also being positioned as a pan-India release, with dubbed versions planned in Hindi, Tamil, Telugu, and Malayalam.\n\nThe movie is said to explore themes of power, vengeance, and rebellion, with high-octane action sequences designed by international stunt choreographers. The makers are leaving no stone unturned to create a visually grand cinematic experience.\n\n\n<div className=\"-mx-2 flex flex-wrap overflow-hidden xl:-mx-2\">\n  <div className=\"my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2\">\n    ![Maple](/static/images/article-4/image413.webp)\n  </div>\n  <div className=\"my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2\">\n    ![Lake](/static/images/article-4/image411.jpg)\n  </div>\n</div>\n\n\n",
+    "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var v=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),f=(a,e)=>{for(var i in e)s(a,i,{get:e[i],enumerable:!0})},r=(a,e,i,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let t of u(e))!x.call(a,t)&&t!==i&&s(a,t,{get:()=>e[t],enumerable:!(o=p(e,t))||o.enumerable});return a};var w=(a,e,i)=>(i=a!=null?m(g(a)):{},r(e||!a||!a.__esModule?s(i,\"default\",{value:a,enumerable:!0}):i,a)),b=a=>r(s({},\"__esModule\",{value:!0}),a);var d=v((M,l)=>{l.exports=_jsx_runtime});var j={};f(j,{default:()=>h,frontmatter:()=>y});var n=w(d()),y={title:\"Sudeep Joins Star-Studded Cast of KD \\u2013 The Devil | Director Prem Confirms\",date:\"2025-09-17\",tags:[\"gossip\",\"exclusive\"],draft:!1,layout:\"PostBanner\",images:[\"/static/images/article-4/image412.webp\"],summary:\"Backed by KVN Productions, KD \\u2013 The Devil is being made on a massive budget, with Arjun Janya composing the music.\"};function c(a){let e={a:\"a\",div:\"div\",h2:\"h2\",p:\"p\",path:\"path\",span:\"span\",svg:\"svg\",...a.components},{Image:i}=e;return i||k(\"Image\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(e.h2,{className:\"content-header\",id:\"backed-by-kvn-productions\",children:[(0,n.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#backed-by-kvn-productions\",tabIndex:\"-1\",children:(0,n.jsx)(n.Fragment,{children:(0,n.jsx)(e.span,{className:\"content-header-link\",children:(0,n.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,n.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,n.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Backed by KVN Productions\"]}),(0,n.jsx)(e.p,{children:\"KD \\u2013 The Devil is being made on a massive budget, with Arjun Janya composing the music. The film is not only set to push the boundaries of Kannada cinema but is also being positioned as a pan-India release, with dubbed versions planned in Hindi, Tamil, Telugu, and Malayalam.\"}),(0,n.jsx)(e.p,{children:\"The movie is said to explore themes of power, vengeance, and rebellion, with high-octane action sequences designed by international stunt choreographers. The makers are leaving no stone unturned to create a visually grand cinematic experience.\"}),(0,n.jsxs)(\"div\",{className:\"-mx-2 flex flex-wrap overflow-hidden xl:-mx-2\",children:[(0,n.jsx)(\"div\",{className:\"my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2\",children:(0,n.jsx)(e.div,{children:(0,n.jsx)(i,{alt:\"Maple\",src:\"/static/images/article-4/image413.webp\",width:\"800\",height:\"800\"})})}),(0,n.jsx)(\"div\",{className:\"my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2\",children:(0,n.jsx)(e.div,{children:(0,n.jsx)(i,{alt:\"Lake\",src:\"/static/images/article-4/image411.jpg\",width:\"708\",height:\"708\"})})})]})]})}function h(a={}){let{wrapper:e}=a.components||{};return e?(0,n.jsx)(e,{...a,children:(0,n.jsx)(c,{...a})}):c(a)}function k(a,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+a+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(j);})();\n;return Component;"
+  },
+  "_id": "blog/sudeep-joins-star-studded-cast-of-kd.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/sudeep-joins-star-studded-cast-of-kd.mdx",
+    "sourceFileName": "sudeep-joins-star-studded-cast-of-kd.mdx",
+    "sourceFileDir": "blog",
+    "contentType": "mdx",
+    "flattenedPath": "blog/sudeep-joins-star-studded-cast-of-kd"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "1 min read",
+    "minutes": 0.58,
+    "time": 34800,
+    "words": 116
+  },
+  "slug": "sudeep-joins-star-studded-cast-of-kd",
+  "path": "blog/sudeep-joins-star-studded-cast-of-kd",
+  "filePath": "blog/sudeep-joins-star-studded-cast-of-kd.mdx",
+  "toc": [
+    {
+      "value": "Backed by KVN Productions",
+      "url": "#backed-by-kvn-productions",
+      "depth": 2
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Sudeep Joins Star-Studded Cast of KD – The Devil | Director Prem Confirms",
+    "datePublished": "2025-09-17T00:00:00.000Z",
+    "dateModified": "2025-09-17T00:00:00.000Z",
+    "description": "Backed by KVN Productions, KD – The Devil is being made on a massive budget, with Arjun Janya composing the music.",
+    "image": "/static/images/article-4/image412.webp",
+    "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/sudeep-joins-star-studded-cast-of-kd"
+  }
+}

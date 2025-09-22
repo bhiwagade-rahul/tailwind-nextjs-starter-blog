@@ -1,0 +1,75 @@
+{
+  "title": "Emmys 2025 Red Carpet- 7 Best Dressed Celebrities Who Stole the Spotlight",
+  "date": "2025-09-20T00:00:00.000Z",
+  "tags": [
+    "gossip",
+    "hollywood",
+    "emmy"
+  ],
+  "draft": false,
+  "summary": "The Emmys 2025 red carpet was a dazzling display of high fashion, bold statements, and unforgettable style moments. From classic elegance to avant-garde risks, here are the 7 best dressed celebrities at the Emmys 2025 who turned heads and dominated the fashion conversation",
+  "body": {
+    "raw": "\n## 1. Priyanka Chopra Jonas — Timeless Elegance in Sabyasachi\n\nPriyanka Chopra Jonas once again proved why she's a global fashion icon. Dressed in a custom crimson Sabyasachi sari-gown fusion, the actress blended Desi heritage with Hollywood glam. The hand-embroidered piece featured gold zari work and a dramatic trail, making her one of the most talked-about stars on the Emmys 2025 red carpet.\n\n\n\n## 2. Zendaya — Old Hollywood Glamour in Valentino\n\nZendaya brought back vintage glam in a structured, off-shoulder black velvet Valentino gown with opera gloves. Her sleek updo and diamond choker completed the elegant look. Once again, she proved that minimalism can steal the spotlight.\n\n\n\n## 3. Simone Ashley — Royal in Rami Kadi\n\nBridgerton star Simone Ashley turned heads in a bold, midnight-blue Rami Kadi gown adorned with Swarovski crystals. The structured bodice and flowing cape added drama, while the thigh-high slit brought the glam factor.\n\n\n## 4. Pedro Pascal — Power Suiting with a Twist\n\nPedro Pascal ditched the traditional tuxedo and opted for a custom Louis Vuitton suit with subtle metallic threading and an asymmetrical blazer cut. Paired with chunky-soled boots and tinted glasses, he redefined red carpet masculinity.\n\n\n## 5. Lily Collins — Princess Moment in Dior Couture\n\nLily Collins was ethereal in a pastel pink Dior Couture gown with delicate floral appliqué and a voluminous tulle skirt. The “Emily in Paris” actress brought fairytale vibes with her soft glam and pulled-back curls.\n\n\n## 6. Jeremy Allen White — Minimalist in Monochrome\n\n\"The Bear\" star Jeremy Allen White kept things sleek in a tailored white Tom Ford suit with a matching open-collared silk shirt. His sharp, clean look stood out amid the sea of black tuxes.\n\n\n\n\n",
+    "code": "var Component=(()=>{var m=Object.create;var t=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var w=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var y=(l,e)=>()=>(e||l((e={exports:{}}).exports,e),e.exports),f=(l,e)=>{for(var n in e)t(l,n,{get:e[n],enumerable:!0})},s=(l,e,n,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of w(e))!g.call(l,i)&&i!==n&&t(l,i,{get:()=>e[i],enumerable:!(r=p(e,i))||r.enumerable});return l};var k=(l,e,n)=>(n=l!=null?m(u(l)):{},s(e||!l||!l.__esModule?t(n,\"default\",{value:l,enumerable:!0}):n,l)),b=l=>s(t({},\"__esModule\",{value:!0}),l);var h=y((N,o)=>{o.exports=_jsx_runtime});var x={};f(x,{default:()=>c,frontmatter:()=>v});var a=k(h()),v={title:\"Emmys 2025 Red Carpet- 7 Best Dressed Celebrities Who Stole the Spotlight\",date:\"2025-09-20\",tags:[\"gossip\",\"hollywood\",\"emmy\"],draft:!1,summary:\"The Emmys 2025 red carpet was a dazzling display of high fashion, bold statements, and unforgettable style moments. From classic elegance to avant-garde risks, here are the 7 best dressed celebrities at the Emmys 2025 who turned heads and dominated the fashion conversation\"};function d(l){let e={a:\"a\",h2:\"h2\",p:\"p\",path:\"path\",span:\"span\",svg:\"svg\",...l.components};return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsxs)(e.h2,{className:\"content-header\",id:\"1-priyanka-chopra-jonas--timeless-elegance-in-sabyasachi\",children:[(0,a.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#1-priyanka-chopra-jonas--timeless-elegance-in-sabyasachi\",tabIndex:\"-1\",children:(0,a.jsx)(a.Fragment,{children:(0,a.jsx)(e.span,{className:\"content-header-link\",children:(0,a.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,a.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,a.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"1. Priyanka Chopra Jonas \\u2014 Timeless Elegance in Sabyasachi\"]}),(0,a.jsx)(e.p,{children:\"Priyanka Chopra Jonas once again proved why she's a global fashion icon. Dressed in a custom crimson Sabyasachi sari-gown fusion, the actress blended Desi heritage with Hollywood glam. The hand-embroidered piece featured gold zari work and a dramatic trail, making her one of the most talked-about stars on the Emmys 2025 red carpet.\"}),(0,a.jsxs)(e.h2,{className:\"content-header\",id:\"2-zendaya--old-hollywood-glamour-in-valentino\",children:[(0,a.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#2-zendaya--old-hollywood-glamour-in-valentino\",tabIndex:\"-1\",children:(0,a.jsx)(a.Fragment,{children:(0,a.jsx)(e.span,{className:\"content-header-link\",children:(0,a.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,a.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,a.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"2. Zendaya \\u2014 Old Hollywood Glamour in Valentino\"]}),(0,a.jsx)(e.p,{children:\"Zendaya brought back vintage glam in a structured, off-shoulder black velvet Valentino gown with opera gloves. Her sleek updo and diamond choker completed the elegant look. Once again, she proved that minimalism can steal the spotlight.\"}),(0,a.jsxs)(e.h2,{className:\"content-header\",id:\"3-simone-ashley--royal-in-rami-kadi\",children:[(0,a.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#3-simone-ashley--royal-in-rami-kadi\",tabIndex:\"-1\",children:(0,a.jsx)(a.Fragment,{children:(0,a.jsx)(e.span,{className:\"content-header-link\",children:(0,a.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,a.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,a.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"3. Simone Ashley \\u2014 Royal in Rami Kadi\"]}),(0,a.jsx)(e.p,{children:\"Bridgerton star Simone Ashley turned heads in a bold, midnight-blue Rami Kadi gown adorned with Swarovski crystals. The structured bodice and flowing cape added drama, while the thigh-high slit brought the glam factor.\"}),(0,a.jsxs)(e.h2,{className:\"content-header\",id:\"4-pedro-pascal--power-suiting-with-a-twist\",children:[(0,a.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#4-pedro-pascal--power-suiting-with-a-twist\",tabIndex:\"-1\",children:(0,a.jsx)(a.Fragment,{children:(0,a.jsx)(e.span,{className:\"content-header-link\",children:(0,a.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,a.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,a.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"4. Pedro Pascal \\u2014 Power Suiting with a Twist\"]}),(0,a.jsx)(e.p,{children:\"Pedro Pascal ditched the traditional tuxedo and opted for a custom Louis Vuitton suit with subtle metallic threading and an asymmetrical blazer cut. Paired with chunky-soled boots and tinted glasses, he redefined red carpet masculinity.\"}),(0,a.jsxs)(e.h2,{className:\"content-header\",id:\"5-lily-collins--princess-moment-in-dior-couture\",children:[(0,a.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#5-lily-collins--princess-moment-in-dior-couture\",tabIndex:\"-1\",children:(0,a.jsx)(a.Fragment,{children:(0,a.jsx)(e.span,{className:\"content-header-link\",children:(0,a.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,a.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,a.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"5. Lily Collins \\u2014 Princess Moment in Dior Couture\"]}),(0,a.jsx)(e.p,{children:\"Lily Collins was ethereal in a pastel pink Dior Couture gown with delicate floral appliqu\\xE9 and a voluminous tulle skirt. The \\u201CEmily in Paris\\u201D actress brought fairytale vibes with her soft glam and pulled-back curls.\"}),(0,a.jsxs)(e.h2,{className:\"content-header\",id:\"6-jeremy-allen-white--minimalist-in-monochrome\",children:[(0,a.jsx)(e.a,{\"aria-hidden\":\"true\",href:\"#6-jeremy-allen-white--minimalist-in-monochrome\",tabIndex:\"-1\",children:(0,a.jsx)(a.Fragment,{children:(0,a.jsx)(e.span,{className:\"content-header-link\",children:(0,a.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,a.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,a.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"6. Jeremy Allen White \\u2014 Minimalist in Monochrome\"]}),(0,a.jsx)(e.p,{children:'\"The Bear\" star Jeremy Allen White kept things sleek in a tailored white Tom Ford suit with a matching open-collared silk shirt. His sharp, clean look stood out amid the sea of black tuxes.'})]})}function c(l={}){let{wrapper:e}=l.components||{};return e?(0,a.jsx)(e,{...l,children:(0,a.jsx)(d,{...l})}):d(l)}return b(x);})();\n;return Component;"
+  },
+  "_id": "blog/the-time-machine.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/the-time-machine.mdx",
+    "sourceFileName": "the-time-machine.mdx",
+    "sourceFileDir": "blog",
+    "contentType": "mdx",
+    "flattenedPath": "blog/the-time-machine"
+  },
+  "type": "Blog",
+  "readingTime": {
+    "text": "2 min read",
+    "minutes": 1.415,
+    "time": 84900,
+    "words": 283
+  },
+  "slug": "the-time-machine",
+  "path": "blog/the-time-machine",
+  "filePath": "blog/the-time-machine.mdx",
+  "toc": [
+    {
+      "value": "1. Priyanka Chopra Jonas — Timeless Elegance in Sabyasachi",
+      "url": "#1-priyanka-chopra-jonas--timeless-elegance-in-sabyasachi",
+      "depth": 2
+    },
+    {
+      "value": "2. Zendaya — Old Hollywood Glamour in Valentino",
+      "url": "#2-zendaya--old-hollywood-glamour-in-valentino",
+      "depth": 2
+    },
+    {
+      "value": "3. Simone Ashley — Royal in Rami Kadi",
+      "url": "#3-simone-ashley--royal-in-rami-kadi",
+      "depth": 2
+    },
+    {
+      "value": "4. Pedro Pascal — Power Suiting with a Twist",
+      "url": "#4-pedro-pascal--power-suiting-with-a-twist",
+      "depth": 2
+    },
+    {
+      "value": "5. Lily Collins — Princess Moment in Dior Couture",
+      "url": "#5-lily-collins--princess-moment-in-dior-couture",
+      "depth": 2
+    },
+    {
+      "value": "6. Jeremy Allen White — Minimalist in Monochrome",
+      "url": "#6-jeremy-allen-white--minimalist-in-monochrome",
+      "depth": 2
+    }
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Emmys 2025 Red Carpet- 7 Best Dressed Celebrities Who Stole the Spotlight",
+    "datePublished": "2025-09-20T00:00:00.000Z",
+    "dateModified": "2025-09-20T00:00:00.000Z",
+    "description": "The Emmys 2025 red carpet was a dazzling display of high fashion, bold statements, and unforgettable style moments. From classic elegance to avant-garde risks, here are the 7 best dressed celebrities at the Emmys 2025 who turned heads and dominated the fashion conversation",
+    "image": "/static/images/desi-show-biz-icon.png",
+    "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/the-time-machine"
+  }
+}
