@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: desishowbiz-next
+    container_name: desishowbiz-frontend
     ports:
       - "3000:3000"
     volumes:

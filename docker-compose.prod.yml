@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile   # Use your production Dockerfile
-    container_name: desishowbiz-prod
+    container_name: desishowbiz-frontend
     environment:
       - NODE_ENV=production
       - NEXT_TELEMETRY_DISABLED=1
