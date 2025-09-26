@@ -46,11 +46,7 @@ const extractVideoId = (url: string): string | null => {
   return null
 }
 
-const YouTube: React.FC<YouTubeProps> = ({
-  videoId,
-  url,
-  title = 'YouTube video player',
-}) => {
+const YouTube: React.FC<YouTubeProps> = ({ videoId, url, title = 'YouTube video player' }) => {
   let finalVideoId: string | null = videoId || null
 
   if (url && !videoId) {
@@ -59,20 +55,20 @@ const YouTube: React.FC<YouTubeProps> = ({
 
   if (!finalVideoId) {
     return (
-      <div className="w-full aspect-video rounded-lg overflow-hidden mb-6 bg-gray-200 flex items-center justify-center text-gray-500">
+      <div className="mb-6 flex aspect-video w-full items-center justify-center overflow-hidden rounded-lg bg-gray-200 text-gray-500">
         Invalid YouTube URL or video ID
       </div>
     )
   }
 
   return (
-    <div className="w-full aspect-video rounded-lg overflow-hidden mb-6">
+    <div className="mb-6 aspect-video w-full overflow-hidden rounded-lg">
       <iframe
         src={`https://www.youtube.com/embed/${finalVideoId}`}
         title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="w-full h-full border-0"
+        className="h-full w-full border-0"
       />
     </div>
   )

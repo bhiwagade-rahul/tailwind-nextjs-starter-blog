@@ -100,7 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
             {/* Hero Image Section - Full Width Above Header */}
-            <div className="relative w-screen h-[100px] md:h-[130px] lg:h-[156px] overflow-hidden -ml-[50vw] left-1/2 mb-2">
+            <div className="relative left-1/2 mb-2 -ml-[50vw] h-[100px] w-screen overflow-hidden md:h-[130px] lg:h-[156px]">
               <Image
                 src="/static/images/dsb-banner.webp"
                 alt="Desi Show Biz Banner"

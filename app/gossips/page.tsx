@@ -7,14 +7,17 @@ export default async function GossipsPage() {
   const posts = allCoreContent(sortedPosts)
 
   // Filter posts for Gossips (gossip and entertainment news)
-  const gossipsPosts = posts.filter((post) =>
-    post.tags && post.tags.some((tag) =>
-      tag.toLowerCase().includes('gossip') ||
-      tag.toLowerCase().includes('news') ||
-      tag.toLowerCase().includes('entertainment') ||
-      tag.toLowerCase().includes('scandal') ||
-      tag.toLowerCase().includes('buzz')
-    )
+  const gossipsPosts = posts.filter(
+    (post) =>
+      post.tags &&
+      post.tags.some(
+        (tag) =>
+          tag.toLowerCase().includes('gossip') ||
+          tag.toLowerCase().includes('news') ||
+          tag.toLowerCase().includes('entertainment') ||
+          tag.toLowerCase().includes('scandal') ||
+          tag.toLowerCase().includes('buzz')
+      )
   )
 
   return <Main posts={gossipsPosts} />
@@ -22,5 +25,6 @@ export default async function GossipsPage() {
 
 export const metadata = {
   title: 'Gossips! - Latest Entertainment News & Buzz',
-  description: 'Stay updated with the latest entertainment news, celebrity gossip, and breaking stories from the world of showbiz.',
+  description:
+    'Stay updated with the latest entertainment news, celebrity gossip, and breaking stories from the world of showbiz.',
 }

@@ -4,12 +4,12 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: Dockerfile   # Use your production Dockerfile
+      dockerfile: Dockerfile.prod   # Use your production Dockerfile
     container_name: desishowbiz-frontend
     environment:
       - NODE_ENV=production
       - NEXT_TELEMETRY_DISABLED=1
-      - PORT=3000
+      - PORT=3001
     ports:
-      - "3000:3000"
+      - "3001:3001"
     restart: unless-stopped

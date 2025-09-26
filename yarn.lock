@@ -5382,7 +5382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"entities@npm:^4.2.0, entities@npm:^4.4.0, entities@npm:^4.5.0":
+"entities@npm:4.5.0, entities@npm:^4.2.0, entities@npm:^4.4.0, entities@npm:^4.5.0":
   version: 4.5.0
   resolution: "entities@npm:4.5.0"
   checksum: 853f8ebd5b425d350bffa97dd6958143179a5938352ccae092c62d1267c4e392a039be1bae7d51b6e4ffad25f51f9617531fedf5237f15df302ccfb452cbf2d7
@@ -9693,6 +9693,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parse5@npm:7.1.2":
+  version: 7.1.2
+  resolution: "parse5@npm:7.1.2"
+  dependencies:
+    entities: ^4.4.0
+  checksum: 59465dd05eb4c5ec87b76173d1c596e152a10e290b7abcda1aecf0f33be49646ea74840c69af975d7887543ea45564801736356c568d6b5e71792fd0f4055713
+  languageName: node
+  linkType: hard
+
 "parse5@npm:^7.0.0, parse5@npm:^7.1.2":
   version: 7.2.1
   resolution: "parse5@npm:7.2.1"
@@ -11696,6 +11705,7 @@ __metadata:
     contentlayer2: 0.5.5
     cross-env: ^7.0.3
     cross-spawn: ^7.0.6
+    entities: 4.5.0
     esbuild: 0.25.2
     eslint: ^9.14.0
     eslint-config-next: 15.2.4
@@ -11711,6 +11721,7 @@ __metadata:
     next: 15.2.4
     next-contentlayer2: 0.5.5
     next-themes: ^0.4.6
+    parse5: 7.1.2
     pliny: 0.4.1
     postcss: ^8.4.24
     prettier: ^3.0.0

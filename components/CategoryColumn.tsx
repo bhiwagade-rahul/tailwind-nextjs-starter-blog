@@ -28,11 +28,14 @@ export default function CategoryColumn({ title, posts, categoryColor }: Category
   return (
     <div className="mb-8">
       {/* Category Header */}
-      <div className={`mb-4 flex items-center border-b-2 pb-2`} style={{ borderColor: categoryColor }}>
+      <div
+        className={`mb-4 flex items-center border-b-2 pb-2`}
+        style={{ borderColor: categoryColor }}
+      >
         <h2 className="text-xl font-bold" style={{ color: categoryColor }}>
           {title}
         </h2>
-        <div className="ml-2 flex-1 h-px bg-gray-300 dark:bg-gray-600"></div>
+        <div className="ml-2 h-px flex-1 bg-gray-300 dark:bg-gray-600"></div>
       </div>
 
       {/* Posts List */}
@@ -78,21 +81,19 @@ export default function CategoryColumn({ title, posts, categoryColor }: Category
               </div>
 
               {/* Content */}
-              <div className="flex-1 min-w-0">
+              <div className="min-w-0 flex-1">
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                  className="focus:ring-primary-500 focus:ring-2 focus:ring-offset-2 focus:outline-none"
                   aria-label={`Read more: "${post.title}"`}
                 >
-                  <h3 className="text-sm font-medium text-gray-900 line-clamp-2 group-hover:text-primary-600 dark:text-gray-100 dark:group-hover:text-primary-400">
+                  <h3 className="group-hover:text-primary-600 dark:group-hover:text-primary-400 line-clamp-2 text-sm font-medium text-gray-900 dark:text-gray-100">
                     {post.title}
                   </h3>
                 </Link>
 
                 <div className="mt-1 flex items-center space-x-2 text-xs text-gray-500 dark:text-gray-400">
-                  <time dateTime={post.date}>
-                    {formatDate(post.date, siteMetadata.locale)}
-                  </time>
+                  <time dateTime={post.date}>{formatDate(post.date, siteMetadata.locale)}</time>
                   {post.tags && post.tags.length > 0 && (
                     <>
                       <span>•</span>
@@ -101,7 +102,7 @@ export default function CategoryColumn({ title, posts, categoryColor }: Category
                   )}
                 </div>
 
-                <p className="mt-1 text-xs text-gray-600 line-clamp-2 dark:text-gray-300">
+                <p className="mt-1 line-clamp-2 text-xs text-gray-600 dark:text-gray-300">
                   {post.summary}
                 </p>
               </div>
@@ -109,7 +110,7 @@ export default function CategoryColumn({ title, posts, categoryColor }: Category
               {/* Arrow */}
               <div className="flex-shrink-0">
                 <svg
-                  className="h-4 w-4 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-primary-600 dark:group-hover:text-primary-400"
+                  className="group-hover:text-primary-600 dark:group-hover:text-primary-400 h-4 w-4 text-gray-400 transition-transform group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -132,7 +133,7 @@ export default function CategoryColumn({ title, posts, categoryColor }: Category
         <div className="mt-4 text-center">
           <Link
             href={`/tags/${title.toLowerCase()}`}
-            className="text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300"
+            className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 text-sm font-medium"
           >
             View more {title} →
           </Link>

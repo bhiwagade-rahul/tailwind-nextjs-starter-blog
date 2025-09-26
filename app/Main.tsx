@@ -21,24 +21,30 @@ export default function Home({ posts }) {
     }))
 
   // Categorize posts
-  const hollywoodPosts = posts.filter((post) =>
-    post.tags && post.tags.some((tag) => tag.toLowerCase().includes('hollywood'))
+  const hollywoodPosts = posts.filter(
+    (post) => post.tags && post.tags.some((tag) => tag.toLowerCase().includes('hollywood'))
   )
 
-  const worldPosts = posts.filter((post) =>
-    post.tags && post.tags.some((tag) =>
-      tag.toLowerCase().includes('canada') ||
-      tag.toLowerCase().includes('holiday') ||
-      tag.toLowerCase().includes('travel')
-    )
+  const worldPosts = posts.filter(
+    (post) =>
+      post.tags &&
+      post.tags.some(
+        (tag) =>
+          tag.toLowerCase().includes('canada') ||
+          tag.toLowerCase().includes('holiday') ||
+          tag.toLowerCase().includes('travel')
+      )
   )
 
-  const exclusivePosts = posts.filter((post) =>
-    post.tags && post.tags.some((tag) =>
-      tag.toLowerCase().includes('images') ||
-      tag.toLowerCase().includes('exclusive') ||
-      tag.toLowerCase().includes('feature')
-    )
+  const exclusivePosts = posts.filter(
+    (post) =>
+      post.tags &&
+      post.tags.some(
+        (tag) =>
+          tag.toLowerCase().includes('images') ||
+          tag.toLowerCase().includes('exclusive') ||
+          tag.toLowerCase().includes('feature')
+      )
   )
 
   return (
@@ -91,12 +97,12 @@ export default function Home({ posts }) {
               >
                 <Link
                   href={`/blog/${slug}`}
-                  className="flex h-full flex-col focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                  className="focus:ring-primary-500 flex h-full flex-col focus:ring-2 focus:ring-offset-2 focus:outline-none"
                   aria-label={`Read more: "${title}"`}
                 >
                   {/* Image Section - 60% of card height */}
                   {hasImage && (
-                    <div className="relative h-0 pb-[60%] overflow-hidden">
+                    <div className="relative h-0 overflow-hidden pb-[60%]">
                       {images.length === 1 ? (
                         // Single image
                         <Image
@@ -141,8 +147,8 @@ export default function Home({ posts }) {
                                   sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 16vw"
                                 />
                                 {/* Overlay showing number of additional images */}
-                                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                                  <span className="text-white text-sm font-medium">
+                                <div className="bg-opacity-40 absolute inset-0 flex items-center justify-center bg-black">
+                                  <span className="text-sm font-medium text-white">
                                     +{images.length - 1}
                                   </span>
                                 </div>
@@ -157,15 +163,12 @@ export default function Home({ posts }) {
                   {/* Content Section - Remaining space (40% when image present, 100% when no image) */}
                   <div className={`flex flex-col ${hasImage ? 'flex-1 p-4' : 'flex-1 p-6'}`}>
                     {/* Date */}
-                    <time
-                      dateTime={date}
-                      className="text-sm text-gray-500 dark:text-gray-400"
-                    >
+                    <time dateTime={date} className="text-sm text-gray-500 dark:text-gray-400">
                       {formatDate(date, siteMetadata.locale)}
                     </time>
 
                     {/* Title */}
-                    <h2 className="mt-2 text-lg font-bold leading-tight text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                    <h2 className="group-hover:text-primary-600 dark:group-hover:text-primary-400 mt-2 text-lg leading-tight font-bold text-gray-900 transition-colors dark:text-gray-100">
                       {title}
                     </h2>
 
@@ -177,12 +180,14 @@ export default function Home({ posts }) {
                     </div>
 
                     {/* Summary */}
-                    <p className={`flex-1 text-sm text-gray-600 dark:text-gray-300 ${hasImage ? 'line-clamp-2' : 'line-clamp-3'}`}>
+                    <p
+                      className={`flex-1 text-sm text-gray-600 dark:text-gray-300 ${hasImage ? 'line-clamp-2' : 'line-clamp-3'}`}
+                    >
                       {summary}
                     </p>
 
                     {/* Read More Indicator */}
-                    <div className="mt-4 flex items-center text-sm font-medium text-primary-600 group-hover:text-primary-700 dark:text-primary-400 dark:group-hover:text-primary-300 transition-colors">
+                    <div className="text-primary-600 group-hover:text-primary-700 dark:text-primary-400 dark:group-hover:text-primary-300 mt-4 flex items-center text-sm font-medium transition-colors">
                       Read more
                       <svg
                         className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1"

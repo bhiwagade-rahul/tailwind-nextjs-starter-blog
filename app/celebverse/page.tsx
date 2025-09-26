@@ -7,14 +7,17 @@ export default async function CelebversePage() {
   const posts = allCoreContent(sortedPosts)
 
   // Filter posts for Celebverse (celebrity-related content)
-  const celebversePosts = posts.filter((post) =>
-    post.tags && post.tags.some((tag) =>
-      tag.toLowerCase().includes('hollywood') ||
-      tag.toLowerCase().includes('celebrity') ||
-      tag.toLowerCase().includes('celeb') ||
-      tag.toLowerCase().includes('actor') ||
-      tag.toLowerCase().includes('actress')
-    )
+  const celebversePosts = posts.filter(
+    (post) =>
+      post.tags &&
+      post.tags.some(
+        (tag) =>
+          tag.toLowerCase().includes('hollywood') ||
+          tag.toLowerCase().includes('celebrity') ||
+          tag.toLowerCase().includes('celeb') ||
+          tag.toLowerCase().includes('actor') ||
+          tag.toLowerCase().includes('actress')
+      )
   )
 
   return <Main posts={celebversePosts} />
@@ -22,5 +25,6 @@ export default async function CelebversePage() {
 
 export const metadata = {
   title: 'Celebverse - Celebrity News & Entertainment',
-  description: 'Your ultimate destination for celebrity news, Hollywood updates, and entertainment gossip.',
+  description:
+    'Your ultimate destination for celebrity news, Hollywood updates, and entertainment gossip.',
 }
