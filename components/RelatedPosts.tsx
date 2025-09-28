@@ -96,7 +96,7 @@ export default function RelatedPosts({ currentPostSlug, tags }: RelatedPostsProp
           <div key={post.slug} className="w-72 flex-shrink-0">
             <div className="h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
               {post.images?.[0] && (
-                <Link href={`/${post.slug}`} aria-label={`Link to ${post.title}`}>
+                <Link href={`/blog/${post.slug}`} aria-label={`Link to ${post.title}`}>
                   <Image
                     alt={post.title}
                     src={post.images[0]}
@@ -109,7 +109,7 @@ export default function RelatedPosts({ currentPostSlug, tags }: RelatedPostsProp
               <div className="p-4">
                 <h3 className="mb-2 line-clamp-2 text-lg leading-6 font-semibold">
                   <Link
-                    href={`/${post.slug}`}
+                    href={`/blog/${post.slug}`}
                     aria-label={`Link to ${post.title}`}
                     className="hover:text-primary-500 dark:hover:text-primary-400 text-gray-900 dark:text-gray-100"
                   >
@@ -120,7 +120,7 @@ export default function RelatedPosts({ currentPostSlug, tags }: RelatedPostsProp
                   {post.summary}
                 </p>
                 <Link
-                  href={`/${post.slug}`}
+                  href={`/blog/${post.slug}`}
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-sm font-medium"
                   aria-label={`Read more about ${post.title}`}
                 >
