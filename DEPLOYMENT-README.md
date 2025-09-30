@@ -17,6 +17,8 @@ This guide provides a comprehensive step-by-step process for deploying and maint
 docker build -t rahulbhiwagade122/desishowbiz:latest .
 docker push rahulbhiwagade122/desishowbiz:latest
 
+ kubectl get pods -n default --watch
+ 
 # Deploy to Kubernetes
 helm upgrade my-desishowbiz-frontend ./charts/desishowbiz-frontend
 ```

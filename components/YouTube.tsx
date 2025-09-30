@@ -47,7 +47,12 @@ const extractVideoId = (url: string): string | null => {
   return null
 }
 
-const YouTube: React.FC<YouTubeProps> = ({ videoId, url, title = 'YouTube video player', className = '' }) => {
+const YouTube: React.FC<YouTubeProps> = ({
+  videoId,
+  url,
+  title = 'YouTube video player',
+  className = '',
+}) => {
   let finalVideoId: string | null = videoId || null
 
   if (url && !videoId) {
@@ -57,10 +62,12 @@ const YouTube: React.FC<YouTubeProps> = ({ videoId, url, title = 'YouTube video 
   if (!finalVideoId) {
     console.error('Invalid YouTube URL or video ID:', url || videoId)
     return (
-      <div className={`mb-6 flex aspect-video w-full items-center justify-center overflow-hidden rounded-lg bg-gray-200 text-gray-500 dark:bg-gray-800 dark:text-gray-400 ${className}`}>
+      <div
+        className={`mb-6 flex aspect-video w-full items-center justify-center overflow-hidden rounded-lg bg-gray-200 text-gray-500 dark:bg-gray-800 dark:text-gray-400 ${className}`}
+      >
         <div className="text-center">
           <p>Unable to load YouTube video</p>
-          <p className="text-sm mt-1">Invalid URL or video ID</p>
+          <p className="mt-1 text-sm">Invalid URL or video ID</p>
         </div>
       </div>
     )
