@@ -3,7 +3,8 @@ import SectionContainer from '@/components/SectionContainer'
 
 export const metadata = {
   title: 'Privacy Policy - Desi Showbiz',
-  description: 'Privacy Policy for Desi Showbiz. Learn how we collect, use, and protect your personal information.',
+  description:
+    'Privacy Policy for Desi Showbiz. Learn how we collect, use, and protect your personal information.',
 }
 
 export default function PrivacyPolicyPage() {
@@ -22,7 +23,9 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2>1. Information We Collect</h2>
               <h3>Personal Information</h3>
-              <p>We may collect personal information that you voluntarily provide to us, including:</p>
+              <p>
+                We may collect personal information that you voluntarily provide to us, including:
+              </p>
               <ul>
                 <li>Name and email address when you subscribe to our newsletter</li>
                 <li>Comments and feedback you provide</li>
@@ -72,12 +75,17 @@ export default function PrivacyPolicyPage() {
                 <li>Social media integration</li>
                 <li>Content delivery</li>
               </ul>
-              <p>These services have their own privacy policies which we encourage you to review.</p>
+              <p>
+                These services have their own privacy policies which we encourage you to review.
+              </p>
             </section>
 
             <section>
               <h2>5. Information Sharing and Disclosure</h2>
-              <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following circumstances:</p>
+              <p>
+                We do not sell, trade, or rent your personal information to third parties. We may
+                share information only in the following circumstances:
+              </p>
               <ul>
                 <li>With your explicit consent</li>
                 <li>To comply with legal obligations</li>
@@ -88,12 +96,20 @@ export default function PrivacyPolicyPage() {
 
             <section>
               <h2>6. Data Security</h2>
-              <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
+              <p>
+                We implement appropriate security measures to protect your personal information
+                against unauthorized access, alteration, disclosure, or destruction. However, no
+                method of transmission over the internet is 100% secure.
+              </p>
             </section>
 
             <section>
               <h2>7. Data Retention</h2>
-              <p>We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law.</p>
+              <p>
+                We retain your personal information only as long as necessary to fulfill the
+                purposes outlined in this policy, unless a longer retention period is required by
+                law.
+              </p>
             </section>
 
             <section>
@@ -110,12 +126,18 @@ export default function PrivacyPolicyPage() {
 
             <section>
               <h2>9. Children's Privacy</h2>
-              <p>Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+              <p>
+                Our website is not intended for children under 13 years of age. We do not knowingly
+                collect personal information from children under 13.
+              </p>
             </section>
 
             <section>
               <h2>10. Changes to This Policy</h2>
-              <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date.</p>
+              <p>
+                We may update this Privacy Policy from time to time. We will notify you of any
+                changes by posting the new policy on this page and updating the "Last updated" date.
+              </p>
             </section>
 
             <section>

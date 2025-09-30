@@ -1,13 +1,13 @@
 {
   "exclusive": 5,
-  "world": 2,
-  "celebverse": 3,
   "gossip": 5,
   "hollywood": 6,
-  "emmy": 1,
-  "exlusive": 1,
+  "wedding": 1,
+  "world": 2,
+  "celebverse": 3,
   "netflix": 1,
   "binge-worthy": 1,
   "bollywood": 2,
-  "wedding": 1
+  "emmy": 1,
+  "exlusive": 1
 }

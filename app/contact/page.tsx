@@ -4,7 +4,8 @@ import SectionContainer from '@/components/SectionContainer'
 
 export const metadata = {
   title: 'Contact Us - Desi Showbiz',
-  description: 'Get in touch with Desi Showbiz. Contact us for inquiries, feedback, or collaboration opportunities.',
+  description:
+    'Get in touch with Desi Showbiz. Contact us for inquiries, feedback, or collaboration opportunities.',
 }
 
 export default function ContactPage() {
@@ -16,8 +17,8 @@ export default function ContactPage() {
           <div className="mb-8">
             <h2>Get in Touch</h2>
             <p>
-              We'd love to hear from you! Whether you have questions, feedback, or collaboration opportunities,
-              feel free to reach out to us.
+              We'd love to hear from you! Whether you have questions, feedback, or collaboration
+              opportunities, feel free to reach out to us.
             </p>
           </div>
 
@@ -33,11 +34,11 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+          <div className="rounded-lg bg-gray-50 p-6 dark:bg-gray-800">
             <h3>Response Time</h3>
             <p>
-              We typically respond to inquiries within 24-48 hours during business days.
-              For urgent matters, please indicate "URGENT" in your subject line.
+              We typically respond to inquiries within 24-48 hours during business days. For urgent
+              matters, please indicate "URGENT" in your subject line.
             </p>
           </div>
 
