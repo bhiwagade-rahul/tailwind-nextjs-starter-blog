@@ -20,6 +20,20 @@ export default function Footer() {
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
         </div>
+        <div className="mb-8 flex flex-wrap justify-center gap-4 text-sm">
+          <Link href="/about" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+            About Us
+          </Link>
+          <Link href="/contact" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+            Contact
+          </Link>
+          <Link href="/privacy-policy" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+            Privacy Policy
+          </Link>
+          <Link href="/terms-and-conditions" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+            Terms & Conditions
+          </Link>
+        </div>
       </div>
     </footer>
   )

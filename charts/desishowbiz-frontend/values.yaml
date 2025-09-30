@@ -2,15 +2,17 @@ rootNamespace: "default"
 image:
   repository: rahulbhiwagade122/desishowbiz
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 service:
   type: ClusterIP
   port: 3000
+  targetPort: 3000
 
 env:
   NODE_ENV: production
   NEXT_TELEMETRY_DISABLED: "1"
+  PORT: "3000"
 
 ingress:
   enabled: false
