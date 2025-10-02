@@ -6,11 +6,10 @@ const siteMetadata = {
   description: 'Not Just News — It’s Desi Show Biz',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://desishowbiz.co',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/desi-show-biz-icon.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'priya.ramteke.msc@gmail.com',
   // twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
@@ -43,9 +42,9 @@ const siteMetadata = {
     // posthogAnalytics: {
     //   posthogProjectApiKey: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     // },
-    // googleAnalytics: {
-    //   googleAnalyticsId: '', // e.g. G-XXXXXXX
-    // },
+    googleAnalytics: {
+      googleAnalyticsId: "G-7RS7WCNBHJ", // e.g. G-XXXXXXX
+    },
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
