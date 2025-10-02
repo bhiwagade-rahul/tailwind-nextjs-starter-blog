@@ -38,19 +38,19 @@ const BubbleBackground: React.FC<BubbleBackgroundProps> = ({ className = '' }) =
       opacitySpeed: number
     }> = []
 
-    // Create bubbles - 9-10 bubbles total
+    // Create bubbles - only 4 bubbles total
     const createBubbles = () => {
-      const bubbleCount = 10 // Fixed number
+      const bubbleCount = 4 // Minimal number
 
       bubbles = [] // Reset array
       for (let i = 0; i < bubbleCount; i++) {
         bubbles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          radius: Math.random() * 40 + 20, // Good sizes
-          speed: Math.random() * 0.1 + 0.02, // Very slow movement
-          opacity: Math.random() * 0.3 + 0.1, // Subtle opacity
-          opacitySpeed: Math.random() * 0.005 + 0.001, // Very slow fading
+          radius: Math.random() * 15 + 5, // Very small sizes (5-20px)
+          speed: Math.random() * 0.08 + 0.02, // Very slow movement
+          opacity: Math.random() * 0.25 + 0.08, // More subtle opacity
+          opacitySpeed: Math.random() * 0.004 + 0.001, // Very slow fading
         })
       }
     }
@@ -85,7 +85,13 @@ const BubbleBackground: React.FC<BubbleBackgroundProps> = ({ className = '' }) =
 
         // Add highlight - lighter blue
         ctx.beginPath()
-        ctx.arc(bubble.x - bubble.radius * 0.3, bubble.y - bubble.radius * 0.3, bubble.radius * 0.4, 0, Math.PI * 2)
+        ctx.arc(
+          bubble.x - bubble.radius * 0.3,
+          bubble.y - bubble.radius * 0.3,
+          bubble.radius * 0.4,
+          0,
+          Math.PI * 2
+        )
         ctx.fillStyle = `rgba(147, 197, 253, ${bubble.opacity * 1.2})`
         ctx.fill()
 
@@ -110,7 +116,7 @@ const BubbleBackground: React.FC<BubbleBackgroundProps> = ({ className = '' }) =
   return (
     <canvas
       ref={canvasRef}
-      className={`fixed inset-0 pointer-events-none z-0 ${className}`}
+      className={`pointer-events-none fixed inset-0 z-0 ${className}`}
       style={{ background: 'transparent' }}
     />
   )
