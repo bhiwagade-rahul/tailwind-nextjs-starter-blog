@@ -1,16 +1,4 @@
-# Desi Show Biz - PowerShell Deployment Script
-
-param(
-    [string]$Action = "deploy",
-    [string]$Environment = "development"
-)
-
-# Configuration
-$APP_NAME = "desishowbiz-frontend"
-$DOCKER_REPO = "rahulbhiwagade122/desishowbiz"
-$IMAGE_TAG = "latest"
-$NAMESPACE = "default"
-$HELM_RELEASE = "my-$APP_NAME"
+# Desi Show Biz - Simple Deployment Script
 
 # Colors for output
 $Green = "Green"
@@ -22,33 +10,15 @@ function Write-ColoredOutput {
     Write-Host $Message -ForegroundColor $Color
 }
 
-function Show-Help {
-    Write-ColoredOutput "Desi Show Biz - PowerShell Deployment Script" $Green
-    Write-ColoredOutput ""
-    Write-ColoredOutput "Usage: .\deploy.ps1 [action] [environment]" $Yellow
-    Write-ColoredOutput ""
-    Write-ColoredOutput "Actions:" $Yellow
-    Write-ColoredOutput "  build     - Build Docker image"
-    Write-ColoredOutput "  push      - Push Docker image to registry"
-    Write-ColoredOutput "  deploy    - Deploy application using Helm (default)"
-    Write-ColoredOutput "  status    - Show deployment status"
-    Write-ColoredOutput "  logs      - Show application logs"
-    Write-ColoredOutput "  restart   - Restart deployment"
-    Write-ColoredOutput "  clean     - Clean up Docker images"
-    Write-ColoredOutput ""
-    Write-ColoredOutput "Environments:" $Yellow
-    Write-ColoredOutput "  development - Development environment (default)"
-    Write-ColoredOutput "  staging     - Staging environment"
-    Write-ColoredOutput "  production  - Production environment"
-}
-
 function Test-Prerequisites {
+    Write-ColoredOutput "Checking prerequisites..." $Yellow
+
     # Check if Docker is installed
     try {
         $null = docker version
     }
     catch {
-        Write-ColoredOutput "Docker is not installed or not running. Please install Docker Desktop." $Red
+        Write-ColoredOutput "❌ Docker is not installed or not running. Please install Docker Desktop." $Red
         exit 1
     }
 
@@ -57,7 +27,7 @@ function Test-Prerequisites {
         $null = kubectl version --client
     }
     catch {
-        Write-ColoredOutput "kubectl is not installed. Please install kubectl." $Red
+        Write-ColoredOutput "❌ kubectl is not installed. Please install kubectl." $Red
         exit 1
     }
 
@@ -66,120 +36,70 @@ function Test-Prerequisites {
         $null = helm version
     }
     catch {
-        Write-ColoredOutput "Helm is not installed. Please install Helm." $Red
+        Write-ColoredOutput "❌ Helm is not installed. Please install Helm." $Red
         exit 1
     }
-}
 
-function Build-DockerImage {
-    Write-ColoredOutput "Building Docker image..." $Green
-    docker build -t "$DOCKER_REPO`:$IMAGE_TAG" .
-    if ($LASTEXITCODE -eq 0) {
-        Write-ColoredOutput "Docker image built successfully" $Green
-    } else {
-        Write-ColoredOutput "Failed to build Docker image" $Red
-        exit 1
-    }
-}
-
-function Push-DockerImage {
-    Write-ColoredOutput "Pushing Docker image..." $Green
-    docker push "$DOCKER_REPO`:$IMAGE_TAG"
-    if ($LASTEXITCODE -eq 0) {
-        Write-ColoredOutput "Docker image pushed successfully" $Green
-    } else {
-        Write-ColoredOutput "Failed to push Docker image" $Red
-        exit 1
-    }
+    Write-ColoredOutput "✅ All prerequisites are installed" $Green
 }
 
 function Deploy-Application {
-    Write-ColoredOutput "Deploying application with Helm..." $Green
+    Write-ColoredOutput "🚀 Starting deployment..." $Green
 
-    $valuesFile = "charts/$APP_NAME/values.yaml"
-    if ($Environment -eq "staging") {
-        $valuesFile = "charts/$APP_NAME/values-staging.yaml"
-    } elseif ($Environment -eq "production") {
-        $valuesFile = "charts/$APP_NAME/values-production.yaml"
-    }
+    # Delete older image from local
+    Write-ColoredOutput "🗑️ Deleting older image from local..." $Yellow
+    docker image rm rahulbhiwagade122/desishowbiz 2>$null | Out-Null
+    Write-ColoredOutput "✅ Image deleted..." $Green
 
-    helm upgrade --install $HELM_RELEASE "charts/$APP_NAME" `
-        --namespace $NAMESPACE `
-        --create-namespace `
-        --wait
-
-    if ($LASTEXITCODE -eq 0) {
-        Write-ColoredOutput "Application deployed successfully" $Green
-    } else {
-        Write-ColoredOutput "Failed to deploy application" $Red
+    # Build Docker images
+    Write-ColoredOutput "📦 Building Docker images..." $Yellow
+    docker compose -f docker-compose.prod.yml build
+    if ($LASTEXITCODE -ne 0) {
+        Write-ColoredOutput "❌ Failed to build Docker images" $Red
         exit 1
     }
-}
+    Write-ColoredOutput "✅ Docker images built successfully..." $Green
 
-function Show-Status {
-    Write-ColoredOutput "Checking deployment status..." $Green
-
-    Write-ColoredOutput "Helm Releases:" $Yellow
-    helm list -n $NAMESPACE
-
-    Write-ColoredOutput "Pods:" $Yellow
-    kubectl get pods -n $NAMESPACE -l "app=$APP_NAME"
-
-    Write-ColoredOutput "Services:" $Yellow
-    kubectl get services -n $NAMESPACE -l "app=$APP_NAME"
-}
-
-function Show-Logs {
-    Write-ColoredOutput "Showing application logs..." $Green
-    kubectl logs -f -n $NAMESPACE -l "app=$APP_NAME"
-}
-
-function Restart-Deployment {
-    Write-ColoredOutput "Restarting deployment..." $Green
-    kubectl rollout restart deployment/$HELM_RELEASE -n $NAMESPACE
-    Write-ColoredOutput "Deployment restarted" $Green
-}
-
-function Clean-DockerImages {
-    Write-ColoredOutput "Cleaning up Docker images..." $Green
-    docker image prune -f
-    docker images | Select-String $APP_NAME | ForEach-Object {
-        $imageId = ($_ -split '\s+')[2]
-        if ($imageId) {
-            docker rmi -f $imageId 2>$null | Out-Null
-        }
+    # Tag Docker images
+    Write-ColoredOutput "🏷️ Tagging Docker images..." $Yellow
+    docker tag desishowbiz-nextjs-blog-frontend rahulbhiwagade122/desishowbiz
+    if ($LASTEXITCODE -ne 0) {
+        Write-ColoredOutput "❌ Failed to tag Docker images" $Red
+        exit 1
     }
-    Write-ColoredOutput "Cleanup completed" $Green
+    Write-ColoredOutput "✅ Docker images tagged successfully..." $Green
+
+    # Push Docker images to Docker Hub
+    Write-ColoredOutput "⬆️ Pushing Docker images to Docker Hub..." $Yellow
+    docker push rahulbhiwagade122/desishowbiz:latest
+    if ($LASTEXITCODE -ne 0) {
+        Write-ColoredOutput "❌ Failed to push Docker images" $Red
+        exit 1
+    }
+    Write-ColoredOutput "✅ Docker images pushed successfully..." $Green
+
+    # Deploy with Helm
+    Write-ColoredOutput "🌟 Deploying with Helm..." $Yellow
+    helm upgrade my-desishowbiz-frontend ./charts/desishowbiz-frontend
+    if ($LASTEXITCODE -ne 0) {
+        Write-ColoredOutput "❌ Failed to deploy with Helm" $Red
+        exit 1
+    }
+    Write-ColoredOutput "✅ Application deployed successfully" $Green
+
+    # Show status
+    Write-ColoredOutput ""
+    Write-ColoredOutput "📊 Deployment Status:" $Yellow
+    helm list
+    Write-ColoredOutput ""
+    kubectl get pods -l app=desishowbiz-frontend
+    Write-ColoredOutput ""
+    Write-ColoredOutput "🎉 Deployment completed successfully!" $Green
 }
 
 # Main execution
-Test-Prerequisites
+Write-ColoredOutput "🌟 Desi Show Biz - One-Click Deployment" $Green
+Write-ColoredOutput ""
 
-switch ($Action) {
-    "build" {
-        Build-DockerImage
-    }
-    "push" {
-        Push-DockerImage
-    }
-    "deploy" {
-        Deploy-Application
-    }
-    "status" {
-        Show-Status
-    }
-    "logs" {
-        Show-Logs
-    }
-    "restart" {
-        Restart-Deployment
-    }
-    "clean" {
-        Clean-DockerImages
-    }
-    default {
-        Write-ColoredOutput "Unknown action: $Action" $Red
-        Show-Help
-        exit 1
-    }
-}
+Test-Prerequisites
+Deploy-Application
