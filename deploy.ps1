@@ -7,6 +7,13 @@ $Red = "Red"
 
 function Write-ColoredOutput {
     param([string]$Message, [string]$Color = "White")
+
+    # Validate color parameter and default to White if invalid
+    $validColors = @("Black", "DarkBlue", "DarkGreen", "DarkCyan", "DarkRed", "DarkMagenta", "DarkYellow", "Gray", "DarkGray", "Blue", "Green", "Cyan", "Red", "Magenta", "Yellow", "White")
+    if ($Color -notin $validColors) {
+        $Color = "White"
+    }
+
     Write-Host $Message -ForegroundColor $Color
 }
 

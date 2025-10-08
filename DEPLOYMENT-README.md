@@ -13,6 +13,11 @@ This guide provides a comprehensive step-by-step process for deploying and maint
 
 ### One-Command Deployment
 ```bash
+# update access token
+
+doctl auth init --access-token "PASTE_YOUR_TOKEN_HERE"
+
+
 # Build and push new image
 docker build -t rahulbhiwagade122/desishowbiz:latest .
 docker push rahulbhiwagade122/desishowbiz:latest
