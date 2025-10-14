@@ -42,7 +42,7 @@ export default function Carousel({ items }: CarouselProps) {
   }
 
   return (
-    <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-lg">
+    <div className="relative h-[32rem] w-full overflow-hidden rounded-lg shadow-lg">
       {/* Main carousel container */}
       <div
         className="flex h-full transition-transform duration-500 ease-in-out"
