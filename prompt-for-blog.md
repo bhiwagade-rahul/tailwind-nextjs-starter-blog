@@ -45,5 +45,6 @@ summary: [Plain text summary, no quotes]
 - Summary field must have no quotes around the text
 - Replace all colons (:) with hyphens (-) in content
 - Content should be SEO-heavy but original, not copied
+- use existing tags from tag-data.json file
 
 **Content must be original analysis, not copied text. Extract key plot points and themes from HTML but rewrite in your own words to create engaging blog content.**
