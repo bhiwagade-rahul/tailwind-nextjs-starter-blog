@@ -45,85 +45,86 @@ export default function CategoryColumn({ title, posts, categoryColor }: Category
           const imageUrl = hasImage ? post.images![0] : null
 
           return (
-            <article
-              key={post.slug}
-              className="group flex items-center space-x-3 rounded-lg border border-gray-200 bg-white p-3 transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800"
+            <Link
+              href={`/blog/${post.slug}`}
+              className="focus:ring-primary-500 focus:ring-2 focus:ring-offset-2 focus:outline-none"
+              aria-label={`Read more: "${post.title}"`}
             >
-              {/* Thumbnail */}
-              <div className="flex-shrink-0">
-                {imageUrl ? (
-                  <div className="relative h-16 w-16 overflow-hidden rounded-md">
-                    <Image
-                      src={imageUrl}
-                      alt={post.title}
-                      fill
-                      className="object-cover transition-transform group-hover:scale-105"
-                      sizes="64px"
-                    />
-                  </div>
-                ) : (
-                  <div className="flex h-16 w-16 items-center justify-center rounded-md bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600">
-                    <svg
-                      className="h-6 w-6 text-gray-400 dark:text-gray-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1}
-                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              <article
+                key={post.slug}
+                className="group relative flex items-center space-x-3 rounded-lg border border-gray-200 bg-white p-3 transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800 before:absolute before:-inset-1 before:rounded-lg before:bg-gradient-to-r before:from-pink-600 before:via-purple-600 before:to-blue-600 before:opacity-0 before:blur before:transition-all before:duration-300 before:pointer-events-none hover:before:opacity-25 before:content-['']"
+              >
+                {/* Thumbnail */}
+                <div className="flex-shrink-0">
+                  {imageUrl ? (
+                    <div className="relative h-16 w-16 overflow-hidden rounded-md">
+                      <Image
+                        src={imageUrl}
+                        alt={post.title}
+                        fill
+                        className="object-cover transition-transform group-hover:scale-105"
+                        sizes="64px"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-16 w-16 items-center justify-center rounded-md bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600">
+                      <svg
+                        className="h-6 w-6 text-gray-400 dark:text-gray-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1}
+                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
                       />
                     </svg>
                   </div>
                 )}
               </div>
 
-              {/* Content */}
-              <div className="min-w-0 flex-1">
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="focus:ring-primary-500 focus:ring-2 focus:ring-offset-2 focus:outline-none"
-                  aria-label={`Read more: "${post.title}"`}
-                >
+                {/* Content */}
+                <div className="min-w-0 flex-1">
                   <h3 className="group-hover:text-primary-600 dark:group-hover:text-primary-400 line-clamp-2 text-sm font-medium text-gray-900 dark:text-gray-100">
                     {post.title}
                   </h3>
-                </Link>
 
-                <div className="mt-1 flex items-center space-x-2 text-xs text-gray-500 dark:text-gray-400">
-                  <time dateTime={post.date}>{formatDate(post.date, siteMetadata.locale)}</time>
-                  {post.tags && post.tags.length > 0 && (
-                    <>
-                      <span>•</span>
-                      <span>{post.tags[0]}</span>
-                    </>
-                  )}
+                  <div className="mt-1 flex items-center space-x-2 text-xs text-gray-500 dark:text-gray-400">
+                    <time dateTime={post.date}>{formatDate(post.date, siteMetadata.locale)}</time>
+                    {post.tags && post.tags.length > 0 && (
+                      <>
+                        <span>•</span>
+                        <span>{post.tags[0]}</span>
+                      </>
+                    )}
+                  </div>
+
+                  <p className="mt-1 line-clamp-2 text-xs text-gray-600 dark:text-gray-300">
+                    {post.summary}
+                  </p>
                 </div>
 
-                <p className="mt-1 line-clamp-2 text-xs text-gray-600 dark:text-gray-300">
-                  {post.summary}
-                </p>
-              </div>
-
-              {/* Arrow */}
-              <div className="flex-shrink-0">
-                <svg
-                  className="group-hover:text-primary-600 dark:group-hover:text-primary-400 h-4 w-4 text-gray-400 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </div>
-            </article>
+                {/* Arrow */}
+                <div className="flex-shrink-0">
+                  <svg
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-400 h-4 w-4 text-gray-400 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </article>
+            </Link>
           )
         })}
       </div>

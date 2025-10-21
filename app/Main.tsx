@@ -93,7 +93,7 @@ export default function Home({ posts }) {
             return (
               <article
                 key={slug}
-                className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800"
+                className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md hover:shadow-gray-400/20 hover:shadow-lg hover:shadow-2xl dark:border-gray-700 dark:bg-gray-800 before:absolute before:-inset-1 before:rounded-lg before:bg-gradient-to-r before:from-pink-600 before:via-purple-600 before:to-blue-600 before:opacity-0 before:blur before:transition-all before:duration-300 before:pointer-events-none hover:before:opacity-25 before:content-['']"
               >
                 <Link
                   href={`/blog/${slug}`}
